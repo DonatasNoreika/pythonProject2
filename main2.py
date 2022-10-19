@@ -1,0 +1,4 @@
+
+
+
+pasirinkimai = ['Istorija', "Informatika", "Fizika"]
