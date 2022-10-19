@@ -1,5 +1,6 @@
 
 from random import (randint)
+from logika import tikrinti_spejima
 
 nuo = 1
 iki = int(input("Įveskite spėjamo skaičiaus diapazoną: "))
@@ -18,13 +19,7 @@ while True:
     skaitiklis += 1
     print("Spėjimai", skaitiklis)
 
-    if spejimas == spejamas_skaicius:
+    if tikrinti_spejima(spejimas, spejamas_skaicius):
         print(f'Skaičius {spejamas_skaicius} atspėtas!')
         print(f"Spėjimų skaičius: {skaitiklis}")
         break
-    if spejimas > spejamas_skaicius:
-        print("Mažiau")
-        diapazonas_iki = spejimas
-    if spejimas < spejamas_skaicius:
-        print("Daugiau")
-        diapazonas_nuo = spejimas
