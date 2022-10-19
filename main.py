@@ -1,7 +1,8 @@
 
 from random import (randint)
 
-spejamas_skaicius = randint(1, 100)
+diapazonas = int(input("Įveskite spėjamo skaičiaus diapazoną: "))
+spejamas_skaicius = randint(1, diapazonas)
 
 skaitiklis = 0
 
