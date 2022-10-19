@@ -9,3 +9,7 @@ while True:
     if spejimas == spejamas_skaicius:
         print(f'Skaičius {spejamas_skaicius} atspėtas!')
         break
+    if spejimas > spejamas_skaicius:
+        print("Mažiau")
+    if spejimas < spejamas_skaicius:
+        print("Daugiau")
